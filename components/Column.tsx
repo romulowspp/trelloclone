@@ -14,7 +14,6 @@ const idToColumnText: { [key in TypedColumns]: string } = {
 };
 
 function Column({ id, todos, index }: Props) {
-  console.log(todos);
   return (
     <Draggable draggableId={id} index={index}>
       {(provided) => (
